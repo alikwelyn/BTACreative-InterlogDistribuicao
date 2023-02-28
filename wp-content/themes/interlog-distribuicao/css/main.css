@@ -223,3 +223,153 @@ header {
     font-weight: 400;
     color: var(--color-default);
 }
+
+/* Section Infraestrutura */
+#infraestrutura {
+    background: var(--color-primary);
+}
+#infraestrutura .content {
+    padding: 40px;
+}
+#infraestrutura h3 {
+    padding: 0;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--color-default);
+}
+
+/* Section Serviços Interlog */
+#servico-interlog {
+    background: var(--color-default);
+}
+#servico-interlog .section-title h3 {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+    padding-bottom: 70px;
+}
+#servico-interlog .icon-box {
+    display: flex;
+    flex-flow: wrap;
+    flex: 100%;
+    align-items: center;
+    margin-bottom: 43px;
+    border: none;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    padding: 40px;
+}
+#servico-interlog .icon-box .icon-box-body {
+    flex: 2;
+    padding: 0 20px;
+}
+#servico-interlog .icon-box h4 {
+    padding: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+#servico-interlog .icon-box p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+
+/* Section Cotação */
+#cotacao {
+    background: url("../assets/images/bg-cotacao.jpg") no-repeat;
+}
+
+#cotacao .form-cotacao{
+    background-color: var(--color-default);
+    border: none;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    padding: 40px;
+}
+
+/* Section Melhores Serviços */
+#melhores-servicos {
+    background: url("../assets/images/bg-melhores-servicos.jpg") no-repeat;
+}
+#melhores-servicos .section-title {
+    padding-bottom: 70px;
+}
+#melhores-servicos .section-title h3 {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--color-default);
+    text-align: center;
+    padding-bottom: 20px;
+}
+#melhores-servicos .section-title h3 span {
+    color: var(--color-primary);
+}
+#melhores-servicos .section-title p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-default);
+}
+#melhores-servicos .icon-box {
+    display: flex;
+    flex-flow: wrap;
+    flex: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+#melhores-servicos .icon-box .icon-box-body {
+    padding: 30px 50px;
+    text-align: center;
+}
+#melhores-servicos .icon-box h4 {
+    padding: 0 0 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+#melhores-servicos .icon-box p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-default);
+}
+
+/* Footer */
+footer {
+    background: var(--color-default);
+    padding: 60px 0 30px 0;
+}
+footer .footer-enderecos {
+    padding: 10px 0;
+}
+footer .footer-enderecos h5 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-blue);
+}
+footer .footer-enderecos p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-blue);
+}
+footer #footer-bottom{
+    margin-top: 40px;
+    border-top: 1px solid #C9C9C9;
+}
+footer #footer-bottom p,
+footer #footer-bottom a{
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #979797;
+    transition: all 0.5s;
+    margin-bottom: 0;
+}
+footer #footer-bottom a:hover{
+    color: var(--color-blue);
+}
