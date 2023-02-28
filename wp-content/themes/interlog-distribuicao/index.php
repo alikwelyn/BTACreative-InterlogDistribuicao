@@ -1,12 +1,12 @@
 <?php get_header(); ?>
-
-<main class="container">
-
-  <div class="starter-template text-center py-5 px-3">
-    <h1>Bootstrap 5 starter template</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-  </div>
-
-</main>
-
+  <section id="hero" class="d-flex align-items-center" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/images/banner.png) no-repeat">
+    <div class="container">
+        <div class="row gy-4 d-flex justify-content-between">
+          <div class="col-md-6 mx-auto text-center d-flex flex-column justify-content-center">
+              <h2>Logística inteligente, eficiente e ágil</h2>
+              <p>Esses são os pilares que há mais de 30 anos nos tornaram referência no setor!</p>
+          </div>
+        </div>
+    </div>
+  </section>
 <?php get_footer(); ?>
