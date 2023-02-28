@@ -55,6 +55,20 @@
 </footer>
 
 <?php wp_footer(); ?>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+// Swipe Slider
+$(function() {
+  // Carousel Banner Home
+  var SwiperBannerHome = new Swiper('.banners-home', {
+    loop: true,
+    lazy: true,
+    navigation: {
+      nextEl: '#banner-home-next',
+      prevEl: '#banner-home-prev',
+    }
+  });
+});
+</script>
 </body>
-
 </html>

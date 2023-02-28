@@ -3,8 +3,11 @@ if (!defined('ABSPATH')) {
   exit;
 }
 
-// setup
+// Setup
 require get_template_directory() . '/functions/setup.php';
 
-// enqueues
+// ACF Theme Options
+require get_template_directory() . '/functions/acf-theme-options.php';
+
+// Enqueues
 require get_template_directory() . '/functions/enqueues.php';

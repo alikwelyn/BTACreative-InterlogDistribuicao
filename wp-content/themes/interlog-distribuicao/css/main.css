@@ -186,7 +186,13 @@ header {
 }
 
 /* Hero */
-#hero {
+section#hero {
+    padding: 0;
+}
+#hero .col-md-12{
+    padding: 0;
+}
+#hero .swiper-slide{
     width: 100%;
     min-height: 80vh;
     background-color: var(--color-primary);
@@ -196,7 +202,7 @@ header {
     padding: 120px 0 60px 0;
     color: var(--color-default);
 }
-#hero::before {
+#hero .swiper-slide::before {
     content: "";
     display: block;
     position: absolute;
@@ -208,20 +214,19 @@ header {
     mix-blend-mode: multiply;
     z-index: 0;
 }
-#hero .container {
-    z-index: 1;
-}
-#hero h2 {
+#hero .swiper-slide h2 {
     margin-bottom: 20px;
     padding: 0;
     font-size: 44px;
     font-weight: 700;
     color: var(--color-primary);
+    z-index: 1;
 }
-#hero p {
+#hero .swiper-slide p {
     font-size: 16px;
     font-weight: 400;
     color: var(--color-default);
+    z-index: 1;
 }
 
 /* Section Infraestrutura */
