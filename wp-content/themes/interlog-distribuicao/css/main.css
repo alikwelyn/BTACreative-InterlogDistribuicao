@@ -236,6 +236,12 @@ section#hero {
 #infraestrutura .content {
     padding: 40px;
 }
+#infraestrutura img {
+    border-radius: 25px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    object-fit: cover;
+    object-position: center;
+}
 #infraestrutura h3 {
     padding: 0;
     font-size: 44px;

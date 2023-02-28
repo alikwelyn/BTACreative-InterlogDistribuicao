@@ -1,20 +1,7 @@
 <?php get_header(); ?>
   <?php get_template_part('template-parts/homepage/banner'); ?>
 
-  <section id="infraestrutura">
-    <div class="container">
-      <div class="row gx-0">
-        <div class="col-md-6 d-flex align-items-center">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/encomenda.png" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-6 d-flex flex-column justify-content-center">
-          <div class="content">
-            <h3>Com infraestrutura e tecnologia, oferecemos a solução completa de serviços logísticos.</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php get_template_part('template-parts/homepage/infraestrutura'); ?>
 
   <?php get_template_part('template-parts/homepage/servicos'); ?>
 
