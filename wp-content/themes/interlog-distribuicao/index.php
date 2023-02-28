@@ -25,59 +25,7 @@
     </div>
   </section>
 
-  <section id="servico-interlog">
-    <div class="container">
-      <div class="section-title">
-        <h3>Serviços Interlog</h3>
-      </div>
-      <div class="row">
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon-box-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/distribuicao.png" class="img-fluid" alt="">
-            </div>
-            <div class="icon-box-body">
-              <h4>Distribuição</h4>
-              <p>Entrega em todo Brasil a partir de 1 dia útil e coleta porta-a-porta</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon-box-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/distribuicao.png" class="img-fluid" alt="">
-            </div>
-            <div class="icon-box-body">
-              <h4>Distribuição</h4>
-              <p>Entrega em todo Brasil a partir de 1 dia útil e coleta porta-a-porta</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon-box-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/distribuicao.png" class="img-fluid" alt="">
-            </div>
-            <div class="icon-box-body">
-              <h4>Distribuição</h4>
-              <p>Entrega em todo Brasil a partir de 1 dia útil e coleta porta-a-porta</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon-box-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/distribuicao.png" class="img-fluid" alt="">
-            </div>
-            <div class="icon-box-body">
-              <h4>Distribuição</h4>
-              <p>Entrega em todo Brasil a partir de 1 dia útil e coleta porta-a-porta</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php get_template_part('template-parts/homepage/servicos'); ?>
 
   <section id="cotacao">
     <div class="container">
