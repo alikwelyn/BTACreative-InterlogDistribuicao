@@ -298,17 +298,24 @@ section#hero {
 }
 
 /* Section Infraestrutura */
+section#infraestrutura {
+    margin: 150px 0 100px;
+}
 #infraestrutura {
     background: var(--color-primary);
 }
 #infraestrutura .content {
-    padding: 40px;
+    padding: 40px 40px 40px 100px;
 }
 #infraestrutura img {
     border-radius: 25px;
     box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
     object-fit: cover;
     object-position: center;
+    position: absolute;
+    z-index: 99;
+    width: 680px;
+    height: 680px;
 }
 #infraestrutura .content .btn-default,
 #infraestrutura .content .btn-default:focus {
