@@ -173,11 +173,13 @@ section {
 .navbar a:hover:before,
 .navbar li:hover>a:before,
 .navbar .active:before,
-.navbar .current-menu-item a:before {
+.navbar .current-menu-item a:before,
+.navbar.page .current-menu-item a:before {
     visibility: visible;
     width: 17px;
 }
-.navbar .current-menu-item a{
+.navbar .current-menu-item a,
+.navbar.page .current-menu-item a{
     color: var(--color-primary);
 }
 .navbar a:hover,
