@@ -1,6 +1,6 @@
 <section id="nosso-portfolio">
     <div class="container">
-        <div class="row gx-0">
+        <div class="row">
             <?php 
                 $our_port_sobre = get_field('our_port_sobre', 'option');
             ?>

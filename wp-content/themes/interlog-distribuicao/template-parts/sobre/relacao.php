@@ -1,6 +1,6 @@
 <section id="relacao">
     <div class="container">
-        <div class="row gx-0">
+        <div class="row">
             <?php 
                 $relations_sobre = get_field('relations_sobre', 'option');
             ?>
