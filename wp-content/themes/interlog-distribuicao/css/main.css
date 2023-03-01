@@ -31,7 +31,27 @@ a:hover {
     text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-primary);
+    font-family: var(--font-default);
+}
+
+/* Buttons */
+.btn-default,
+.btn-default:focus {
+    padding: 12px 50px;
+    color: var(--color-default);
+    background: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    font-family: var(--font-default);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.btn-default:hover,
+.btn-default:focus:hover {
+    color: var(--color-default);
+    background: var(--color-blue);
+    border-color: var(--color-blue);
 }
 
 /* Sections & Section Header */
@@ -129,6 +149,7 @@ header {
     color: var(--color-default);
 }
 .navbar .button:hover, .navbar .button:focus:hover {
+    background-color: var(--color-blue);
     color: var(--color-default);
 }
 .navbar .dropdown ul {
@@ -242,11 +263,24 @@ section#hero {
     object-fit: cover;
     object-position: center;
 }
-#infraestrutura h3 {
+#infraestrutura .content .btn-default,
+#infraestrutura .content .btn-default:focus {
+    color: var(--color-default);
+    background: var(--color-blue);
+    border-color: var(--color-blue);
+}
+#infraestrutura .content .btn-default:hover,
+#infraestrutura .content .btn-default:focus:hover {
+    color: var(--color-primary);
+    background: var(--color-default);
+    border-color: var(--color-default);
+}
+#infraestrutura .content h3 {
     padding: 0;
     font-size: 44px;
     font-weight: 700;
     color: var(--color-default);
+    margin-bottom: 50px;
 }
 
 /* Section Serviços Interlog */
@@ -291,6 +325,18 @@ section#hero {
     font-size: 16px;
     font-weight: 400;
     color: var(--color-secondary);
+}
+#servico-interlog .btn-default,
+#servico-interlog .btn-default:focus {
+    color: var(--color-default);
+    background: var(--color-blue);
+    border-color: var(--color-blue);
+}
+#servico-interlog .btn-default:hover,
+#servico-interlog .btn-default:focus:hover {
+    color: var(--color-default);
+    background: var(--color-primary);
+    border-color: var(--color-primary);
 }
 
 /* Section Cotação */
@@ -381,6 +427,18 @@ section#cotacao {
     display: inline-block;
     margin: 0 100px 0 0;
 }
+#cotacao .form-cotacao .form-group .btn-default,
+#cotacao .form-cotacao .form-group .btn-default:focus {
+    color: var(--color-default);
+    background: var(--color-blue);
+    border-color: var(--color-blue);
+}
+#cotacao .form-cotacao .form-group .btn-default:hover,
+#cotacao .form-cotacao .form-group .btn-default:focus:hover {
+    color: var(--color-default);
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+}
 #cotacao .form-cotacao .form-group .wpcf7-spinner {
     display: block;
     top: 15px;
@@ -402,7 +460,7 @@ section#cotacao {
 
 /* Section Melhores Serviços */
 section#melhores-servicos {
-    padding: 0 0 60px;
+    padding: 0;
 }
 #melhores-servicos {
     background: url("../assets/images/bg-melhores-servicos.jpg") no-repeat;
@@ -452,11 +510,24 @@ section#melhores-servicos {
     font-weight: 400;
     color: var(--color-default);
 }
+#melhores-servicos .btn-default,
+#melhores-servicos .btn-default:focus {
+    color: var(--color-default);
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+}
+#melhores-servicos .btn-default:hover,
+#melhores-servicos .btn-default:focus:hover {
+    color: var(--color-primary);
+    background: var(--color-default);
+    border-color: var(--color-default);
+}
 
 /* Footer */
 footer {
     background: var(--color-default);
-    padding: 60px 0 30px 0;
+    padding: 0 0 30px 0;
+    margin-top: -70px;
 }
 footer .footer-enderecos {
     padding: 10px 0;

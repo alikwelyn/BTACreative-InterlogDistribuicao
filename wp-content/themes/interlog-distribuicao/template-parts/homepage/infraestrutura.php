@@ -10,6 +10,7 @@
             <div class="col-md-6 d-flex flex-column justify-content-center">
                 <div class="content">
                     <?php echo $infra_tech_homepage['text_infra_tech_homepage']; ?>
+                    <a href="#" class="btn-default">CONHEÇA NOSSOS SERVIÇOS</a>
                 </div>
             </div>
         </div>

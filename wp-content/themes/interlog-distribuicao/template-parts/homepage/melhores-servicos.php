@@ -8,7 +8,6 @@
             <?php echo $best_services_transport_homepage['text_best_services_transport_homepage']; ?>
             <?php echo $best_services_transport_homepage['subtext_best_services_transport_homepage']; ?>
         </div>
-
         <?php 
             $posts = get_posts(
                 array(
@@ -34,7 +33,9 @@
         <?php endforeach; ?>
         <?php wp_reset_postdata(); ?>
         <?php endif; ?>
-
+        <div class="col-md-12 text-center mt-2 mb-5">
+            <a href="#" class="btn-default">CONHEÇA NOSSOS SERVIÇOS</a>
+        </div>
       </div>
     </div>
 </section>

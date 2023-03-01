@@ -29,6 +29,9 @@
         <?php endforeach; ?>
         <?php wp_reset_postdata(); ?>
         <?php endif; ?>
+        <div class="col-md-12 text-center mt-2 mb-5">
+            <a href="#" class="btn-default">CONHEÇA NOSSOS SERVIÇOS</a>
+        </div>
       </div>
     </div>
 </section>
