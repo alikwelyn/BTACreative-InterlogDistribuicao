@@ -10,8 +10,8 @@
                         foreach($banner_home as $key => $value):
                     ?>
                         <div class="swiper-slide mx-auto text-center d-flex flex-column justify-content-center" style="background-image: url(<?php echo $value['img_banner_homepage'] ?>);">
-                            <h2><?php echo $value['text_banner_homepage'] ?></h2>
-                            <p><?php echo $value['subtext_banner_homepage'] ?></p>
+                            <?php echo $value['text_banner_homepage'] ?>
+                            <?php echo $value['subtext_banner_homepage'] ?>
                         </div>
                     <?php endforeach; ?>
                     </div>

@@ -294,8 +294,13 @@ section#hero {
 }
 
 /* Section Cotação */
+section#cotacao {
+    padding: 100px 0 0;
+}
 #cotacao {
     background: url("../assets/images/bg-cotacao.jpg") no-repeat;
+    position: relative;
+    z-index: 1;
 }
 #cotacao .form-cotacao{
     background-color: var(--color-default);
@@ -396,11 +401,17 @@ section#hero {
 }
 
 /* Section Melhores Serviços */
+section#melhores-servicos {
+    padding: 0 0 60px;
+}
 #melhores-servicos {
     background: url("../assets/images/bg-melhores-servicos.jpg") no-repeat;
+    position: relative;
+    z-index: 0;
+    top: -150px;
 }
 #melhores-servicos .section-title {
-    padding-bottom: 70px;
+    padding: 240px 0 70px;
 }
 #melhores-servicos .section-title h3 {
     font-size: 44px;
@@ -409,7 +420,7 @@ section#hero {
     text-align: center;
     padding-bottom: 20px;
 }
-#melhores-servicos .section-title h3 span {
+#melhores-servicos .section-title h3 strong {
     color: var(--color-primary);
 }
 #melhores-servicos .section-title p {

@@ -9,7 +9,7 @@
             </div>
             <div class="col-md-6 d-flex flex-column justify-content-center">
                 <div class="content">
-                    <h3><?php echo $infra_tech_homepage['text_infra_tech_homepage']; ?></h3>
+                    <?php echo $infra_tech_homepage['text_infra_tech_homepage']; ?>
                 </div>
             </div>
         </div>
