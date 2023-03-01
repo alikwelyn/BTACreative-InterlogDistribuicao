@@ -51,7 +51,7 @@
       <a href="<?php home_url(); ?>" class="logo d-flex align-items-center">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-interlog.png" alt="<?php echo wp_get_document_title(); ?>">
       </a>
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar page">
         <?php
           wp_nav_menu( array(
             'theme_location' => 'main-menu',

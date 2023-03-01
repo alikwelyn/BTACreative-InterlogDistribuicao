@@ -78,7 +78,9 @@
   let selectTopbar = select('#topbar')
   let selectHeader = select('#header')
   let selectNavbar = select('.navbar')
-  if (selectHeader) {
+  if (selectNavbar.classList.contains('page')) {
+    select('.logo img').src = `${window.location.origin}//bta/interlog-distribuicao/wp-content/themes/interlog-distribuicao/assets/images/logo-interlog-blue.png`;
+  } else if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled')
