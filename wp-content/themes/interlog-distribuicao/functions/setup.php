@@ -19,8 +19,8 @@ add_action(
 function add_title_thumbnails() {
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' );
-    //add_image_size('home', 360, 230, true);
-    //add_image_size('post', 751, 400, true);
+    add_image_size('homepage-icon-services', 149, 136, true);
+    add_image_size('icon-services', 308, 281, true);
 }
 add_action( 'after_setup_theme', 'add_title_thumbnails' );
 

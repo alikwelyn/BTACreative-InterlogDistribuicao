@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <section id="topbar" class="d-flex align-items-center">
+  <div id="topbar" class="fixed-top d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-end">
       <div class="contact-info d-flex align-items-center">
         <?php
@@ -27,11 +27,11 @@
         </a>
       </div>
     </div>
-  </section>
-  <header class="d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  </div>
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
       <a href="<?php home_url(); ?>" class="logo d-flex align-items-center">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-interlog.png" alt="<?php echo wp_get_document_title(); ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-interlog.png" alt="<?php echo wp_get_document_title(); ?>">
       </a>
       <nav id="navbar" class="navbar">
         <?php
@@ -40,6 +40,7 @@
             'container' => false,
           ) );
         ?>
+        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
     </div>
   </header>
