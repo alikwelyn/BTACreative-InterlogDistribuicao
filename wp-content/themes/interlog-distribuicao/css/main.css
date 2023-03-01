@@ -297,7 +297,6 @@ section#hero {
 #cotacao {
     background: url("../assets/images/bg-cotacao.jpg") no-repeat;
 }
-
 #cotacao .form-cotacao{
     background-color: var(--color-default);
     border: none;
@@ -305,6 +304,95 @@ section#hero {
     background: #fff;
     box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
     padding: 40px;
+}
+#cotacao .form-cotacao .nav-pills .nav-link {
+    color: var(--color-secondary);
+}
+#cotacao .form-cotacao .nav-pills {
+    --bs-nav-pills-border-radius: 0;
+    background-color: transparent;
+}
+#cotacao .form-cotacao .nav-pills .nav-link.active, #cotacao .form-cotacao .nav-pills .show>.nav-link {
+    color: var(--color-primary);
+    background-color: transparent;
+}
+#cotacao .form-cotacao .nav-pills > li > a.active {
+    color: #007bff;
+    position: relative;
+    z-index: 1;
+}
+#cotacao .form-cotacao .nav-pills > li > a.active:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 0;
+    height: 4px;
+    width: 50%;
+    border-bottom:4px solid var(--color-primary);
+  }
+#cotacao .form-cotacao .tab-content{
+    padding: 0 100px;
+}
+#cotacao .form-cotacao h4{
+    padding: 20px 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+}
+#cotacao .form-cotacao .form-group {
+    margin-bottom: 30px;
+}
+#cotacao .form-cotacao .form-group input,
+#cotacao .form-cotacao .form-group select {
+    height: 60px;
+    border-color: var(--color-secondary);
+    border-radius: 10px;
+}
+#cotacao .form-cotacao .form-group label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#cotacao .form-cotacao .form-group input[type=radio] {
+    accent-color: var(--color-primary);
+    transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+}
+#cotacao .form-cotacao .form-group span {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+#cotacao .form-cotacao .form-group span .wpcf7-list-item-label{
+    padding-left: 10px;
+}
+#cotacao .form-cotacao .form-group .wpcf7-list-item {
+    display: inline-block;
+    margin: 0 100px 0 0;
+}
+#cotacao .form-cotacao .form-group .wpcf7-spinner {
+    display: block;
+    top: 15px;
+    left: 45%;
+}
+#cotacao .form-cotacao p {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+#cotacao .form-cotacao a.acesse{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+    transition: all 0.5s;
 }
 
 /* Section Melhores Serviços */
