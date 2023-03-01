@@ -22,5 +22,11 @@ if( function_exists('acf_add_options_page') ) {
       'menu_title'    => 'Homepage',
       'parent_slug'   => 'theme-general-settings',
   ));
+
+  acf_add_options_sub_page(array(
+    'page_title'    => 'Pagina Sobre',
+    'menu_title'    => 'Sobre',
+    'parent_slug'   => 'theme-general-settings',
+));
   
 }

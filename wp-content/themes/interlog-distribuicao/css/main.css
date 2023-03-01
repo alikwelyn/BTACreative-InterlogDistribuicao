@@ -107,17 +107,21 @@ section {
 
 /* Header */
 #header {
-  transition: all 0.5s;
-  z-index: 997;
-  height: 70px;
-  top: 60px;
+    transition: all 0.5s;
+    z-index: 997;
+    height: 103px;
+    top: 52px;
+}
+#header.page {
+    background: var(--color-default);
+    height: 103px;
 }
 #header .logo img {
     max-height: 40px;
 }
 #header.header-scrolled {
-  background: var(--color-default);
-  top: 0;
+    background: var(--color-default);
+    top: 0;
 }
 
 /* Navbar */
@@ -151,6 +155,7 @@ section {
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
+    text-transform: uppercase;
 }
 .navbar>ul>li>a:before {
     content: "";
@@ -167,9 +172,15 @@ section {
 }
 .navbar a:hover:before,
 .navbar li:hover>a:before,
-.navbar .active:before {
+.navbar .active:before,
+.navbar .current-menu-item a:before,
+.navbar.page .current-menu-item a:before {
     visibility: visible;
     width: 17px;
+}
+.navbar .current-menu-item a,
+.navbar.page .current-menu-item a{
+    color: var(--color-primary);
 }
 .navbar a:hover,
 .navbar .active,
@@ -178,7 +189,8 @@ section {
     color: var(--color-primary);
 }
 .navbar .button, .navbar .button:focus,
-.navbar.scrolled .button, .navbar .button:focus {
+.navbar.scrolled .button, .navbar .button:focus,
+.navbar.page .button, .navbar.page .button:focus {
     background: var(--color-primary);
     padding: 8px 20px;
     margin-left: 30px;
@@ -186,7 +198,8 @@ section {
     color: var(--color-default);
 }
 .navbar .button:hover, .navbar .button:focus:hover,
-.navbar.scrolled .button:hover, .navbar .button:focus:hover {
+.navbar.scrolled .button:hover, .navbar.scrolled .button:focus:hover,
+.navbar.page .button:hover, .navbar.page .button:focus:hover {
     background-color: var(--color-blue);
     color: var(--color-default);
 }
@@ -195,6 +208,10 @@ section {
 }
 .navbar.scrolled a,
 .navbar.scolled a:focus {
+    color: var(--color-blue);
+}
+.navbar.page a,
+.navbar.page a:focus {
     color: var(--color-blue);
 }
 .navbar .dropdown ul {
@@ -262,7 +279,7 @@ section#hero {
 }
 #hero .swiper-slide{
     width: 100%;
-    min-height: 80vh;
+    min-height: 85vh;
     background-color: var(--color-primary);
     background-size: cover;
     background-position: center;
@@ -283,14 +300,58 @@ section#hero {
     z-index: 0;
 }
 #hero .swiper-slide h2 {
+    padding: 0;
+    font-size: 44px;
+    font-weight: 700;
+    color: #EBB024;
+    z-index: 1;
+}
+#hero .swiper-slide p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-default);
+    z-index: 1;
+}
+
+/* Hero Pages */
+section#hero-page {
+    padding: 0;
+    margin-top: 135px;
+}
+#hero-page .col-md-12{
+    padding: 0;
+}
+#hero-page .swiper-slide{
+    width: 100%;
+    min-height: 400px;
+    background-color: var(--color-primary);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 120px 0 60px 0;
+    color: var(--color-default);
+}
+#hero-page .swiper-slide::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-blue);
+    mix-blend-mode: multiply;
+    z-index: 0;
+}
+#hero-page .swiper-slide h2 {
     margin-bottom: 20px;
     padding: 0;
     font-size: 44px;
     font-weight: 700;
-    color: var(--color-primary);
+    color: #EBB024;
     z-index: 1;
 }
-#hero .swiper-slide p {
+#hero-page .swiper-slide p {
     font-size: 16px;
     font-weight: 400;
     color: var(--color-default);
@@ -336,6 +397,10 @@ section#infraestrutura {
     color: var(--color-default);
     margin-bottom: 50px;
 }
+
+/*
+    * Homepage
+*/
 
 /* Section Serviços Interlog */
 #servico-interlog {
@@ -576,6 +641,123 @@ section#melhores-servicos {
     background: var(--color-default);
     border-color: var(--color-default);
 }
+
+/*
+    * Sobre
+*/
+
+/* Section Nosso Portfolio */
+section#nosso-portfolio {
+    margin: 150px 0 100px;
+}
+#nosso-portfolio {
+    background: transparent;
+}
+#nosso-portfolio .content {
+    padding: 40px 40px 40px 100px;
+}
+#nosso-portfolio img {
+    border-radius: 25px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: 99;
+    width: 680px;
+    height: 485px;
+}
+#nosso-portfolio .content p {
+    padding: 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+
+/* Section Relacao */
+#relacao {
+    background: var(--color-primary);
+    background: url("../assets/images/bg-relacoes.jpg") no-repeat;
+    position: relative;
+    z-index: 0;
+    top: -150px;
+}
+#relacao .content {
+    padding: 100px 100px;
+    text-align: center;
+}
+#relacao .content h3 {
+    padding: 0;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--color-default);
+}
+
+/* Section Relacao */
+section#mvv{
+    margin-top: -150px;
+    padding: 60px 0 140px;
+}
+#mvv {
+    background: transparent;
+}
+#mvv .grid-cards {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: 
+    "card-1 side"
+    "card-1 side"
+    "card-2 side"
+    "card-2 side";
+    grid-template-columns: 423px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+#mvv .grid-cards .card-1 {
+    grid-area: card-1;
+}
+#mvv .grid-cards .card-2 {
+    grid-area: card-2;
+}
+#mvv .grid-cards .side {
+    grid-area: side;
+}
+#mvv .icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+#mvv .icon-box .icon-box-img img{
+    max-width: 149px;
+    max-height: 136px;
+    margin-top: 20px;
+}
+#mvv .icon-box .icon-box-body {
+    padding: 0 20px;
+    text-align: left;
+}
+#mvv .icon-box h4 {
+    padding: 20px 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+}
+#mvv .icon-box p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+
 
 /* Footer */
 footer {
