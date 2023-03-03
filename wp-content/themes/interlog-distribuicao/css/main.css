@@ -1296,14 +1296,17 @@ section#courier-internacional {
     text-align: center;
     margin-bottom: 50px;
 }
-#vagas-abertas .card-header {
+#vagas-abertas .card {
+    border-radius: 26px;
+}
+#vagas-abertas .card .card-header {
     display: flex;
     align-items: center;
     background-color: transparent;
     border-bottom: 0;
     padding: 20px;
 }
-#vagas-abertas .card-header .periodo span{
+#vagas-abertas .card .card-header .periodo span{
     background-color: var(--color-primary);
     color: var(--color-default);
     font-size: 14px;
@@ -1312,25 +1315,42 @@ section#courier-internacional {
     border-radius: 11px;
     margin-right: 20px;
 }
-#vagas-abertas .card-header .local span{
+#vagas-abertas .card .card-header .local span{
     color: var(--color-secondary);
     font-size: 16px;
     font-weight: 400;
 }
-#vagas-abertas .card-body {
+#vagas-abertas .card .card-body {
     padding: 20px;
 }
-#vagas-abertas .card-body h5 {
+#vagas-abertas .card .card-body h5 {
     color: var(--color-blue);
     font-size: 28px;
     font-weight: 700;
     text-align: left;
 }
-#vagas-abertas .card-body p {
+#vagas-abertas .card .card-body p {
     color: var(--color-secondary);
     font-size: 16px;
     font-weight: 400;
     text-align: left;
+}
+
+
+#vagas-abertas .swiper-button-prev, .swiper-button-next {
+  width: 42px;
+  height: 16px;
+  background-size: 42px 16px;
+}
+#vagas-abertas .swiper-button-prev {
+    background-image: url("../assets/images/arrow-left.svg");
+    top: 225px;
+    left: 265px;
+}
+#vagas-abertas .swiper-button-next {
+    background-image: url("../assets/images/arrow-right.svg");
+    top: 225px;
+    right: 265px;
 }
 
 /* Footer */
