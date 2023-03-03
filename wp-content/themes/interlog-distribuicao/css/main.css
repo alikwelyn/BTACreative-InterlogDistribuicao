@@ -358,6 +358,37 @@ section#hero-page {
     z-index: 1;
 }
 
+/* Slim CTA */
+#slim-cta {
+    background: url("../assets/images/banner-servicos.jpg") no-repeat;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    margin-bottom: 150px;
+}
+#slim-cta::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-blue);
+    mix-blend-mode: multiply;
+    z-index: 0;
+}
+#slim-cta .col-md-12{
+    z-index: 1;
+}
+#slim-cta h3{
+    padding: 0;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--color-default);
+    margin-bottom: 50px;
+}
+
 /* Section Infraestrutura */
 section#infraestrutura {
     margin: 150px 0 100px;
@@ -758,6 +789,256 @@ section#mvv{
     color: var(--color-secondary);
 }
 
+/*
+    * Serviços
+*/
+
+/* Section Distribuição */
+section#distribuicao {
+    padding: 60px 0 25px;
+}
+#distribuicao {
+    background: var(--color-default);
+}
+#distribuicao .icon-box {
+    display: flex;
+    flex-flow: wrap;
+    flex: 100%;
+    align-items: center;
+    margin-bottom: 43px;
+    border: none;
+}
+#distribuicao .icon-box .icon-box-img{
+    padding: 0 20px 0 0;
+}
+#distribuicao .icon-box .icon-box-img img{
+    max-width: 307px;
+    max-height: 281px;
+    object-fit: cover;
+    object-position: center;
+}
+#distribuicao .icon-box .icon-box-body {
+    flex: 2;
+    padding: 0 20px;
+}
+#distribuicao .icon-box .icon-box-body h4 {
+    padding: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+#distribuicao .icon-box .icon-box-body p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+#distribuicao #sobre-distribuicao {
+    margin-top: 50px;
+}
+#distribuicao #sobre-distribuicao .card {
+    border-radius: 26px;
+}
+#distribuicao #sobre-distribuicao .card .card-img, #distribuicao .card .card-img-top {
+    border-radius: 26px;
+}
+#distribuicao #sobre-distribuicao .card .card-body {
+    text-align: center;
+}
+#distribuicao #sobre-distribuicao .card .card-body h4 {
+    padding: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 20px 0;
+}
+#distribuicao #sobre-distribuicao .card .card-body p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+#distribuicao #sobre-distribuicao .card .card-body p b,
+#distribuicao #sobre-distribuicao .card .card-body p strong {
+    font-weight: 7400;
+}
+
+/* Section Armazenagem */
+section#armazenagem {
+    padding: 0;
+}
+#armazenagem {
+    background: var(--color-default);
+}
+#armazenagem .border{
+    width: 70%;
+    margin: 50px auto ;
+}
+#armazenagem img{
+    max-width: 600px;
+    max-height: 450px;
+    border-radius: 26px;
+}
+#armazenagem .icon-box {
+    display: flex;
+    flex-flow: wrap;
+    flex: 100%;
+    align-items: center;
+    margin-bottom: 43px;
+    border: none;
+}
+#armazenagem .icon-box .icon-box-img{
+    padding: 0 20px 0 0;
+}
+#armazenagem .icon-box .icon-box-img img{
+    max-width: 121px;
+    max-height: 110px;
+    object-fit: cover;
+    object-position: center;
+}
+#armazenagem .icon-box .icon-box-body {
+    flex: 2;
+    padding: 0 20px;
+}
+#armazenagem .icon-box .icon-box-body h4 {
+    padding: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+#armazenagem .icon-box .icon-box-body p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+#armazenagem .icon-box .icon-box-footer {
+    padding: 25px 0;
+}
+#armazenagem .icon-box .icon-box-footer p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+
+/* Section Gestão Eletrônica de Documentos */
+section#gestao-eletronica-documentos {
+    padding: 0;
+}
+#gestao-eletronica-documentos {
+    background: var(--color-default);
+}
+#gestao-eletronica-documentos .border{
+    width: 70%;
+    margin: 50px auto;
+}
+#gestao-eletronica-documentos img{
+    max-width: 600px;
+    max-height: 450px;
+    border-radius: 26px;
+}
+#gestao-eletronica-documentos .icon-box {
+    display: flex;
+    flex-flow: wrap;
+    flex: 100%;
+    align-items: center;
+    margin-bottom: 43px;
+    border: none;
+}
+#gestao-eletronica-documentos .icon-box .icon-box-img{
+    padding: 0 20px 0 0;
+}
+#gestao-eletronica-documentos .icon-box .icon-box-img img{
+    max-width: 121px;
+    max-height: 110px;
+    object-fit: cover;
+    object-position: center;
+}
+#gestao-eletronica-documentos .icon-box .icon-box-body {
+    flex: 2;
+    padding: 0 20px;
+}
+#gestao-eletronica-documentos .icon-box .icon-box-body h4 {
+    padding: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+#gestao-eletronica-documentos .icon-box .icon-box-body p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+#gestao-eletronica-documentos .icon-box .icon-box-footer {
+    padding: 25px 0;
+}
+#gestao-eletronica-documentos .icon-box .icon-box-footer p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+
+/* Section Courier Internacional */
+section#courier-internacional {
+    padding: 0 0 60px;
+}
+#courier-internacional {
+    background: var(--color-default);
+}
+#courier-internacional .border{
+    width: 70%;
+    margin: 50px auto;
+}
+#courier-internacional img{
+    max-width: 600px;
+    max-height: 450px;
+    border-radius: 26px;
+}
+#courier-internacional .icon-box {
+    display: flex;
+    flex-flow: wrap;
+    flex: 100%;
+    align-items: center;
+    margin-bottom: 43px;
+    border: none;
+}
+#courier-internacional .icon-box .icon-box-img{
+    padding: 0 20px 0 0;
+}
+#courier-internacional .icon-box .icon-box-img img{
+    max-width: 121px;
+    max-height: 110px;
+    object-fit: cover;
+    object-position: center;
+}
+#courier-internacional .icon-box .icon-box-body {
+    flex: 2;
+    padding: 0 20px;
+}
+#courier-internacional .icon-box .icon-box-body h4 {
+    padding: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+#courier-internacional .icon-box .icon-box-body p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+#courier-internacional .icon-box .icon-box-footer {
+    padding: 25px 0;
+}
+#courier-internacional .icon-box .icon-box-footer p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
 
 /* Footer */
 footer {
