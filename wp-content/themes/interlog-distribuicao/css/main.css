@@ -1260,6 +1260,29 @@ section#courier-internacional {
     transition: all 0.5s;
 }
 
+/*
+    * Trabalhe Conosco
+*/
+
+/* Junte-se a Nossa Equipe */
+#junte-se-equipe {
+    background-color: var(--color-default);
+    text-align: center;
+    position: relative;
+}
+#junte-se-equipe .content h4 {
+    padding: 0;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+#junte-se-equipe .content p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+
 /* Footer */
 footer {
     background: var(--color-default);
