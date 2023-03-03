@@ -69,3 +69,33 @@ add_filter( 'the_content', 'filter_ptags_on_images' );
     * Remove <p> from Contact Form 7
 */
 add_filter('wpcf7_autop_or_not', '__return_false');
+
+/*
+    * Unregister default widgets
+*/
+function unregister_default_widgets(){
+    unregister_widget('WP_Widget_Pages');
+    unregister_widget('WP_Widget_Calendar');
+    unregister_widget('WP_Widget_Archives');
+    unregister_widget('WP_Widget_Links');
+    unregister_widget('WP_Widget_Meta');
+    unregister_widget('WP_Widget_Search');
+    unregister_widget('WP_Widget_Categories');
+    unregister_widget('WP_Widget_Recent_Posts');
+    unregister_widget('WP_Widget_Recent_Comments');
+    unregister_widget('WP_Widget_RSS');
+    unregister_widget('WP_Widget_Text');
+    unregister_widget('WP_Widget_Tag_Cloud');
+    unregister_widget('WP_Widget_Custom_HTML');
+    unregister_widget('WP_Widget_Media_Video');
+    unregister_widget('WP_Widget_Media_Image');
+    unregister_widget('WP_Widget_Media_Audio');
+    unregister_widget('WP_Widget_Media_Gallery');
+    unregister_widget('WP_Nav_Menu_Widget');
+}
+add_action( 'widgets_init', 'unregister_default_widgets' );
+  
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
