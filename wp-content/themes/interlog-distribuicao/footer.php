@@ -64,8 +64,8 @@ $(function() {
         loop: true,
         lazy: true,
         navigation: {
-        nextEl: '#banner-home-next',
-        prevEl: '#banner-home-prev'
+            nextEl: '#banner-home-next',
+            prevEl: '#banner-home-prev'
         }
     });
     var SwiperBannerPaginas = new Swiper('.banners-paginas', {
@@ -76,6 +76,16 @@ $(function() {
         simulateTouch : false, 
         allowSwipeToNext: false, 
         allowSwipeToPrev: false
+    });
+    var SwiperVagasAbertas = new Swiper('.vagas-abertas', {
+        loop: false,
+        lazy: true,
+        slidesPerView: 3,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '#vagas-abertas-next',
+            prevEl: '#vagas-abertas-prev'
+        }
     });
 });
 
