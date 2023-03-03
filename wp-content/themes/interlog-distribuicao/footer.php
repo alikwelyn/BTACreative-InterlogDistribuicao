@@ -65,8 +65,17 @@ $(function() {
     lazy: true,
     navigation: {
       nextEl: '#banner-home-next',
-      prevEl: '#banner-home-prev',
+      prevEl: '#banner-home-prev'
     }
+  });
+  var SwiperBannerPaginas = new Swiper('.banners-paginas', {
+    loop: false,
+    lazy: true,
+    paginationClickable: false,
+    touchMoveStopPropagation:false,
+    simulateTouch : false, 
+    allowSwipeToNext: false, 
+    allowSwipeToPrev: false
   });
 });
 </script>
