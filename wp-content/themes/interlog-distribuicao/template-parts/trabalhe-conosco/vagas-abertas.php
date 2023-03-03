@@ -7,55 +7,34 @@
             <div class="col-md-12">
                 <div class="swiper-container vagas-abertas">
                     <div class="swiper-wrapper">
+                        <?php
+                        $args = array(
+                            'posts_per_page' => -1,
+                            'post_type' => 'vagas',
+                            'order' => 'ASC'
+                        );
+                        $posts = get_posts( $args );
 
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="periodo"><span>TEMPO INTEGRAL</span></div>
-                                <div class="local"><span>São Paulo</span></div>
-                            </div>
-                            <div class="card-body">
-                                <h5>Marketing 1</h5>
+                        if ( $posts ) :
+                            foreach ( $posts as $post ) :
+                            setup_postdata( $post );
+                        ?>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="periodo"><span><?php echo get_field( 'periodo'); ?></span></div>
+                                    <div class="local"><span><?php echo get_field( 'local'); ?></span></div>
+                                </div>
+                                <div class="card-body">
+                                    <h5><?php the_title(); ?></h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="periodo"><span>TEMPO INTEGRAL</span></div>
-                                <div class="local"><span>São Paulo</span></div>
-                            </div>
-                            <div class="card-body">
-                                <h5>Marketing 2</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="periodo"><span>TEMPO INTEGRAL</span></div>
-                                <div class="local"><span>São Paulo</span></div>
-                            </div>
-                            <div class="card-body">
-                                <h5>Marketing 3</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="periodo"><span>TEMPO INTEGRAL</span></div>
-                                <div class="local"><span>São Paulo</span></div>
-                            </div>
-                            <div class="card-body">
-                                <h5>Marketing 4</h5>
-                            </div>
-                        </div>
-                    </div>
-                        
+                        <?php
+                            endforeach;
+                            wp_reset_postdata();
+                        endif;
+                        ?>
                     </div>
                 </div>
                 <div class="swiper-button-next" id="vagas-abertas-next"></div>

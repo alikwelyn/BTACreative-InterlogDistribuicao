@@ -1388,6 +1388,7 @@ section#courier-internacional {
     padding: 3px 30px;
     border-radius: 11px;
     margin-right: 20px;
+    text-transform: uppercase;
 }
 #vagas-abertas .card .card-header .local span{
     color: var(--color-secondary);
