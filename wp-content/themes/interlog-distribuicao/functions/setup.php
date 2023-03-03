@@ -99,3 +99,29 @@ remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
+
+/* 
+    * Remove comments from admin menu
+*/
+function my_remove_admin_menus() {
+    remove_menu_page( 'edit-comments.php' );
+}
+add_action( 'admin_menu', 'my_remove_admin_menus' );
+
+/* 
+    * Removes comments from post and pages
+*/
+function remove_comment_support() {
+    remove_post_type_support( 'post', 'comments' );
+    remove_post_type_support( 'page', 'comments' );
+}
+add_action( 'init', 'remove_comment_support', 100 );
+
+/* 
+    * Removes comments from admin bar
+*/
+function mytheme_admin_bar_render() {
+    global $wp_admin_bar;
+    $wp_admin_bar->remove_menu('comments');
+}
+add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
