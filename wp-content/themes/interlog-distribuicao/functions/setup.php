@@ -71,7 +71,7 @@ add_filter( 'the_content', 'filter_ptags_on_images' );
 add_filter('wpcf7_autop_or_not', '__return_false');
 
 /*
-    * Unregister default widgets
+    * Unregister Default Widgets
 */
 function unregister_default_widgets(){
     unregister_widget('WP_Widget_Pages');
@@ -101,7 +101,7 @@ remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
 /* 
-    * Remove comments from admin menu
+    * Remove Comments From Admin Menu
 */
 function my_remove_admin_menus() {
     remove_menu_page( 'edit-comments.php' );
@@ -109,7 +109,7 @@ function my_remove_admin_menus() {
 add_action( 'admin_menu', 'my_remove_admin_menus' );
 
 /* 
-    * Removes comments from post and pages
+    * Removes Comments From Post and Pages
 */
 function remove_comment_support() {
     remove_post_type_support( 'post', 'comments' );
@@ -118,10 +118,27 @@ function remove_comment_support() {
 add_action( 'init', 'remove_comment_support', 100 );
 
 /* 
-    * Removes comments from admin bar
+    * Removes Comments From Admin Bar
 */
 function mytheme_admin_bar_render() {
     global $wp_admin_bar;
     $wp_admin_bar->remove_menu('comments');
 }
 add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
+
+/* 
+    * Removes comments URL Field
+*/
+function remove_comment_fields($fields) {
+    unset($fields['url']);
+    return $fields;
+}
+add_filter( 'comment_form_default_fields','remove_comment_fields' );
+
+/* 
+    * Wordpress - Change Footer Text
+*/
+function remove_footer_admin () { 
+  echo 'By <a href="https://btacreative.com.br" target="_new">BTA Creative</a> & <a href="https://wedeploy.com.br" target="_new">WEDEPLOY</a> made with <a href="http://wordpress.org" target="_new">WordPress</a>.'; 
+  } 
+add_filter( 'admin_footer_text', 'remove_footer_admin' ); 
