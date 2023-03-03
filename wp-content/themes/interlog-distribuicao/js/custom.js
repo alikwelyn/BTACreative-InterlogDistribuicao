@@ -179,4 +179,21 @@
     })
   });
 
+  /*
+    * Appear file name uploaded in input type=file
+  */
+  var btnTitle = jQuery(".button-upload-input-title").html();
+  jQuery(".button-upload-input input:file").change(function (){
+    if( this.files && this.files.length >= 1 ) {
+      var file = this.files[0];
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        jQuery(".button-upload-input-title").text(file.name);
+      }
+      reader.readAsDataURL(file);
+    } else {
+      jQuery(".button-upload-input-title").html(btnTitle);
+    } 
+  }); 
+
 })()
