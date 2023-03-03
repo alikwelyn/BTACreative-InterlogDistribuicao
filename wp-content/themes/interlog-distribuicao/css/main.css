@@ -316,7 +316,7 @@ section#hero {
 /* Hero Pages */
 section#hero-page {
     padding: 0;
-    margin-top: 135px;
+    margin-top: 150px;
 }
 #hero-page .col-md-12{
     padding: 0;
@@ -356,6 +356,9 @@ section#hero-page {
     font-weight: 400;
     color: var(--color-default);
     z-index: 1;
+}
+#hero-page iframe{
+    width: 100%;
 }
 
 /* Slim CTA */
@@ -502,6 +505,16 @@ section#hero-page {
 	filter: alpha(opacity=0);
 }
 
+/* Contact Form 7 */
+.wpcf7-not-valid-tip {
+	font-weight: 700 !important;
+}
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+    border-color: red;
+}
+.wpcf7 form .wpcf7-response-output {
+    color: var(--color-secondary);
+}
 
 /* Section Infraestrutura */
 section#infraestrutura {
@@ -1424,6 +1437,32 @@ section#courier-internacional {
     background-image: url("../assets/images/arrow-right.svg");
     top: 225px;
     right: 265px;
+}
+
+/*
+    * Contato
+*/
+
+/* Entre em Contato */
+section#entre-em-contato {
+    padding: 60 0 0;
+}
+#entre-em-contato {
+    background-color: var(--color-default);
+    text-align: center;
+    position: relative;
+}
+#entre-em-contato .content h4 {
+    padding: 0;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+#entre-em-contato .content p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
 }
 
 /* Footer */
