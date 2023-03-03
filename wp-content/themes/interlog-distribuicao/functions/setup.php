@@ -37,13 +37,25 @@ add_action( 'init', 'register_menu' );
     * Adds a specific class to a specific menu item
 */
 function add_specific_class_menu_item( $atts, $item, $args ) {
-    if($item->title === 'ORÇAMENTO'){
+    if( $item->title === 'ORÇAMENTO' ){
         $class = 'button';
-        $atts['class'] = $class;
+        $atts['class'] .= ' ' . $class;
     }
-   return $atts;
+    return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'add_specific_class_menu_item', 10, 3 );
+
+/*
+    * Remove a specific class to a specific menu item
+*/
+function remove_current_menu_item_class( $classes, $item, $args ) {
+    if ( in_array( 'current-menu-item', $classes ) && $item->title === 'ORÇAMENTO' ) {
+        $key = array_search( 'current-menu-item', $classes );
+        unset( $classes[$key] );
+    }
+    return $classes;
+}
+add_filter( 'nav_menu_css_class', 'remove_current_menu_item_class', 10, 3 );
 
 /*
     * Remove <p> from <img> tags
