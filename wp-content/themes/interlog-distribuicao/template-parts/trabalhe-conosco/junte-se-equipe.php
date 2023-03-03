@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <div class="content">
-                    <h4>Junte-se a nossa equipe</h4>
-                    <p>Para se candidatar a uma vaga, preencha o formulário abaixo e anexe seu currículo.<br>Arquivos permitidos: .doc .docx e .pdf</p>
+                    <?php echo get_field('work_with_us_title', 'option'); ?>
+                    <?php echo get_field('work_with_us_text', 'option'); ?>
                 </div>
             </div>
         </div>
