@@ -1167,7 +1167,7 @@ section#courier-internacional {
     width: 50%;
     border-bottom:4px solid var(--color-primary);
 }
-#page-cotacao .form-cotacao .tab-content{
+#page-cotacao .form-cotacao .form{
     padding: 0 100px;
 }
 #page-cotacao .form-cotacao h4{
@@ -1179,6 +1179,7 @@ section#courier-internacional {
 }
 #page-cotacao .form-cotacao .form-group {
     margin-bottom: 30px;
+    text-align: center;
 }
 #page-cotacao .form-cotacao .form-group input,
 #page-cotacao .form-cotacao .form-group select {
