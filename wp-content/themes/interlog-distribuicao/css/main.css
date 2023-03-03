@@ -1225,6 +1225,22 @@ section#courier-internacional {
     background: var(--color-primary);
     border-color: var(--color-primary);
 }
+#page-cotacao .form-cotacao .wpcf7-field-group-remove.btn-default,
+#page-cotacao .form-cotacao .wpcf7-field-group-remove.btn-default:focus {
+    color: var(--color-default);
+    background: red;
+    border-color: red;
+}
+#page-cotacao .form-cotacao .wpcf7-field-group-remove.btn-default:hover,
+#page-cotacao .form-cotacao .wpcf7-field-group-remove.btn-default:focus:hover {
+    transform: scale(1.05);
+}
+#page-cotacao .form-cotacao .form-group .wpcf7-field-group-remove .btn-default:hover,
+#page-cotacao .form-cotacao .form-group .wpcf7-field-group-remove .btn-default:focus:hover {
+    color: var(--color-default);
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+}
 #page-cotacao .form-cotacao .form-group .wpcf7-spinner {
     display: block;
     top: 15px;

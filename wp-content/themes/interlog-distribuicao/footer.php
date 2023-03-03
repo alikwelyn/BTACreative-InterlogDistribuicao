@@ -78,6 +78,7 @@ $(function() {
         allowSwipeToPrev: false
     });
 });
+
 </script>
 </body>
 </html>
