@@ -1,10 +1,68 @@
 @media (min-width: 1280px) and (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }  
-  .navbar .dropdown .dropdown:hover>ul {
-    left: -100%;
-  }
+.navbar .dropdown .dropdown ul {
+  left: -90%;
+}  
+.navbar .dropdown .dropdown:hover>ul {
+  left: -100%;
+}
+.mobile-nav-show {
+  display: none;
+}
+
+/*
+    * Homepage
+*/
+#infraestrutura img {
+  width: 620px;
+  height: 620px;
+}
+#infraestrutura .content h3 {
+  font-size: 40px;
+}
+#cotacao .form-cotacao .form-group .wpcf7-list-item {
+  margin: 0 75px 0 0;
+}
+
+/*
+    * Sobre
+*/
+#nosso-portfolio img {
+  width: 650px;
+  height: 463px;
+}
+#nosso-portfolio .content p {
+  font-size: 22px;
+}
+
+/*
+    * Serviços
+*/
+#armazenagem .border,
+#gestao-eletronica-documentos .border,
+#courier-internacional .border {
+  width: 85%;
+}
+#armazenagem img,
+#gestao-eletronica-documentos img,
+#courier-internacional img {
+  max-width: 525px;
+  max-height: 364px;
+}
+#armazenagem .icon-box .icon-box-img img,
+#gestao-eletronica-documentos .icon-box-img img,
+#courier-internacional .icon-box-img img {
+  max-width: 100px;
+  max-height: 91px;
+}
+
+/*
+    * Estrutura
+*/
+#dados-estrutura-second img {
+  max-width: 525px;
+  max-height: 364px;
+}
+
 }
 
 @media (max-width: 1279px) {
@@ -40,7 +98,7 @@
     color: var(--color-blue);
     white-space: nowrap;
     transition: 0.3s;
-}
+  }
   .navbar>ul>li {
     padding: 0;
   }
@@ -94,10 +152,80 @@
     right: 20px;
     top: 25px;
     z-index: 9999;
+  }
 }
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+/*
+    * Homepage
+*/
+#infraestrutura img {
+  width: 580px;
+  height: 580px;
+}
+#infraestrutura .content h3 {
+  font-size: 36px;
+}
+
+/*
+    * Sobre
+*/
+section#nosso-portfolio {
+  margin: 60px 0 100px;
+}
+#nosso-portfolio img {
+  width: 640px;
+  height: 456px;
+}
+
+/*
+    * Serviços
+*/
+#armazenagem .border,
+#gestao-eletronica-documentos .border,
+#courier-internacional .border {
+  width: 95%;
+}
+#armazenagem img,
+#gestao-eletronica-documentos img,
+#courier-internacional img {
+  max-width: 525px;
+  max-height: 364px;
+}
+#armazenagem .icon-box .icon-box-img img,
+#gestao-eletronica-documentos .icon-box-img img,
+#courier-internacional .icon-box-img img {
+  max-width: 100px;
+  max-height: 91px;
+}
+
+/*
+    * Estrutura
+*/
+#dados-estrutura .icon-box .icon-box-header h3 {
+  font-size: 70px;
+}
+#dados-estrutura .icon-box .icon-box-body h4 {
+  font-size: 30px;
+}
+#dados-estrutura-second img {
+  max-width: 525px;
+  max-height: 364px;
+}
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+#hero-page .swiper-slide h2 {
+  font-size: 40px;
+}
+#slim-cta h3 {
+  font-size: 30px;
+}
+
+/*
+    * Homepage
+*/
 #infraestrutura img {
   width: 520px;
   height: 520px;
@@ -111,6 +239,9 @@
 #servico-interlog .icon-box h4 {
   font-size: 22px;
 }
+#cotacao .form-cotacao .form-group .wpcf7-list-item {
+  margin: 0 50px 0 0;
+}
 #melhores-servicos .section-title h3 {
   font-size: 36px;
 }
@@ -118,8 +249,100 @@
   font-size: 20px;
 }
 footer .footer-brand img {
-  width: 100%;
+  width: 80%;
 }
+
+/*
+    * Sobre
+*/
+section#nosso-portfolio {
+  margin: 60px 0 100px;
+}
+#nosso-portfolio img {
+  width: 550px;
+  height: 392px;
+}
+#nosso-portfolio .content p {
+  font-size: 18px;
+}
+
+/*
+    * Serviços
+*/
+section#courier-internacional {
+  padding: 0 0 30px;
+}
+#armazenagem .border,
+#gestao-eletronica-documentos .border,
+#courier-internacional .border {
+  width: 90%;
+}
+#armazenagem img,
+#gestao-eletronica-documentos img,
+#courier-internacional img {
+  max-width: 450px;
+  max-height: 312px;
+}
+#armazenagem .icon-box .icon-box-img img,
+#gestao-eletronica-documentos .icon-box-img img,
+#courier-internacional .icon-box-img img {
+  max-width: 100px;
+  max-height: 91px;
+}
+#armazenagem .icon-box .icon-box-body h4,
+#gestao-eletronica-documentos .icon-box .icon-box-body h4,
+#courier-internacional .icon-box .icon-box-body h4{
+  font-size: 22px;
+}
+#armazenagem .icon-box .icon-box-footer p,
+#gestao-eletronica-documentos .icon-box .icon-box-footer p,
+#courier-internacional .icon-box .icon-box-footer p{
+  font-size: 14px;
+}
+
+/*
+    * Estrutura
+*/
+#dados-estrutura .icon-box .icon-box-header h3 {
+  font-size: 70px;
+}
+#dados-estrutura .icon-box .icon-box-body h4 {
+  font-size: 30px;
+}
+#dados-estrutura-second img {
+  max-width: 450px;
+  max-height: 312px;
+}
+#dados-estrutura-second .icon-box .icon-box-body h4 {
+  font-size: 40px;
+}
+
+/*
+    * Trabalhe Conosco
+*/
+#vagas-abertas .card .card-header .periodo span {
+  font-size: 12px;
+}
+#vagas-abertas .card .card-header .local span{
+  font-size: 14px;
+}
+#vagas-abertas .card .card-body h5 {
+  font-size: 24px;
+}
+#vagas-abertas .swiper-button-prev {
+  left: 0px;
+}
+#vagas-abertas .swiper-button-next {
+  right: 0px;
+}
+
+/*
+    * Cotação
+*/
+#page-cotacao .form-cotacao .form-group .wpcf7-list-item {
+  margin: 0 50px 0 0;
+}
+
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
