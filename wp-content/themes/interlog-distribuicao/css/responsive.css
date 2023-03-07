@@ -80,6 +80,31 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+#infraestrutura img {
+  width: 520px;
+  height: 520px;
+}
+#infraestrutura .content h3 {
+  font-size: 30px;
+}
+#infraestrutura .content .btn-default, #infraestrutura .content .btn-default:focus {
+  font-size: 14px;
+}
+#servico-interlog .icon-box h4 {
+  font-size: 22px;
+}
+#melhores-servicos .section-title h3 {
+  font-size: 36px;
+}
+#melhores-servicos .icon-box h4 {
+  font-size: 20px;
+}
+footer .footer-brand img {
+  width: 100%;
+}
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   #topbar .contact-info a {
     padding: 0 10px;
