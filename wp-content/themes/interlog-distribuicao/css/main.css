@@ -68,6 +68,7 @@ section {
     font-size: 14px;
     transition: all 0.5s;
     padding: 0;
+    z-index: 99;
 }
 #topbar.topbar-scrolled {
     top: -52px;
@@ -262,6 +263,58 @@ section {
     top: 0;
     left: 100%;
     visibility: visible;
+}
+.navbar.navbar-mobile>ul>li>a:before,
+.navbar.navbar-mobile .current-menu-item a:before,
+.navbar.navbar-mobile .current-menu-item a:before {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    background-color: transparent;
+}
+.navbar.navbar-mobile>ul>li>a:focus,
+.navbar.navbar-mobile>ul>li>a:hover,
+.navbar.navbar-mobile>ul>li>a:hover:focus {
+    color: var(--color-primary);
+}
+.navbar.navbar-mobile .button, .navbar.navbar-mobile .button:focus {
+    margin: 10px 20px;
+}
+.mobile-nav-show {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+    margin-right: 10px;
+}
+.mobile-nav-hide {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+}
+.mobile-nav-active {
+    overflow: hidden;
+}
+i.mobile-nav-toggle.mobile-nav-show.fa.fa-bars,
+i.mobile-nav-toggle.mobile-nav-hide.fa.fa-times {
+    color: var(--color-primary);
+}
+.mobile-nav-active .navbar {
+    right: 0;
+}
+.mobile-nav-active .navbar:before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 113, 43, 0.6);
+    z-index: 9996;
 }
 
 /* Section */

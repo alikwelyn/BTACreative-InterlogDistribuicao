@@ -43,7 +43,7 @@
         ?>
       </nav>
       <i class="mobile-nav-toggle mobile-nav-show fa fa-bars"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none fa fa-bars"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none fa fa-times"></i>
     </div>
   </header>
   <?php } elseif ( is_page() ) { ?>
@@ -59,8 +59,9 @@
             'container' => false,
           ) );
         ?>
-        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
+      <i class="mobile-nav-toggle mobile-nav-show fa fa-bars"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none fa fa-times"></i>
     </div>
   </header>
   <?php } ?>
