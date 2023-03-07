@@ -1481,6 +1481,10 @@ footer #footer-bottom{
     margin-top: 40px;
     border-top: 1px solid #C9C9C9;
 }
+footer #footer-bottom .politica{
+    display: flex;
+    justify-content: end;
+}
 footer #footer-bottom p,
 footer #footer-bottom a{
     margin-top: 20px;

@@ -7,7 +7,6 @@
             <div class="col-md-12">
                 <div class="content">
                     <?php echo $relations_sobre['text_relations_sobre'];?>
-                    
                 </div>
             </div>
             <div class="col-md-4 offset-md-2">
@@ -20,7 +19,7 @@
                 <?php endforeach; ?>
                 </ul>
             </div>
-            <div class="col-md-4 d-flex justify-content-end">
+            <div class="col-md-4">
                 <ul>
                 <?php 
                     $lista_direita = $relations_sobre['lista_direita_relations_sobre'];

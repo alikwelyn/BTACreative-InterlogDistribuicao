@@ -346,10 +346,197 @@ section#courier-internacional {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  #topbar .contact-info a {
-    padding: 0 10px;
-    color: #fff;
-    line-height: 0;
-    transition: 0.3s;
-  }
+#topbar .contact-info a {
+  color: #fff;
+}
+.navbar .current-menu-item a:before, .navbar.page .current-menu-item a:before {
+  visibility: hidden;
+  width: 0;
+}
+#hero .swiper-slide,
+#hero-page .swiper-slide {
+  padding: 0 20px;
+}
+#hero-page .swiper-slide h2 {
+  font-size: 26px;
+}
+#slim-cta h3 {
+  font-size: 30px;
+}
+#form-geral .form .form-container {
+  padding: 0;
+}
+#form-geral .form {
+  padding: 20px;
+}
+#form-geral .form .buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer {
+  text-align: center;
+}
+footer img {
+  margin-bottom: 20px;
+}
+footer #footer-bottom {
+  margin-top: 10px;
+  border-top: 1px solid #C9C9C9;
+}
+footer #footer-bottom .politica{
+  display: flex;
+  justify-content: center;
+}
+
+/*
+  * Homepage
+*/
+section#infraestrutura {
+  margin: 150px 0 0;
+}
+#infraestrutura img {
+  max-width: 367px;
+  height: auto;
+}
+#infraestrutura .content {
+  padding: 162px 0 0;
+}
+#infraestrutura .content h3 {
+  font-size: 30px;
+}
+#servico-interlog .section-title h3 {
+  padding-bottom: 30px;
+}
+#servico-interlog .icon-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#servico-interlog .icon-box .icon-box-img {
+  margin-bottom: 20px;
+}
+#cotacao {
+  background: url("../assets/images/bg-cotacao-mb.jpg") no-repeat;
+}
+#cotacao .form-cotacao {
+  padding: 30px 20px;
+}
+#cotacao .form-cotacao .tab-content {
+  padding: 0;
+}
+#cotacao .form-cotacao p,
+#cotacao .form-cotacao a.acesse {
+  font-size: 18px;
+}
+#melhores-servicos {
+  background: url("../assets/images/bg-melhores-servicos-mb.jpg") no-repeat;
+}
+#melhores-servicos .section-title h3 {
+  font-size: 30px;
+}
+
+/*
+    * Sobre
+*/
+section#nosso-portfolio {
+  margin: 100px 0;
+}
+#nosso-portfolio img {
+  max-width: 367px;
+  height: auto;
+}
+#nosso-portfolio .content {
+  padding: 162px 0 0;
+}
+#relacao .content {
+  padding: 0px 0 40px;
+  text-align: center;
+}
+#relacao .content h3 {
+  font-size: 30px;
+}
+#mvv .grid-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+    * Serviços
+*/
+#distribuicao .icon-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#distribuicao .icon-box .icon-box-img img {
+  margin-bottom: 20px;
+}
+#distribuicao #sobre-distribuicao .card {
+  margin-bottom: 20px;
+}
+#armazenagem .icon-box, #gestao-eletronica-documentos .icon-box, #courier-internacional .icon-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+#armazenagem .border, #gestao-eletronica-documentos .border, #courier-internacional .border {
+  width: 95%;
+  margin: 10px auto;
+}
+#armazenagem img,
+#gestao-eletronica-documentos img,
+#courier-internacional img {
+  max-width: 367px;
+  height: auto;
+}
+#armazenagem .icon-box .icon-box-img, #gestao-eletronica-documentos .icon-box .icon-box-img, #courier-internacional .icon-box .icon-box-img {
+  padding: 20px 0;
+}
+
+/* Estrutura */
+#dados-estrutura .icon-box .icon-box-header h3 {
+  font-size: 60px;
+}
+#dados-estrutura .icon-box .icon-box-body h4 {
+  font-size: 24px;
+}
+#dados-estrutura-second img {
+  max-width: 367px;
+  height: auto;
+  margin-bottom: 20px;
+}
+#dados-estrutura-second .icon-box .icon-box-footer {
+  padding: 10px 0;
+}
+section#dados-estrutura-second {
+  padding: 20px 0;
+}
+
+/* Trabalhe Conosco */
+#vagas-abertas .swiper-button-prev {
+  top: 127px;
+  left: 125px;
+}
+#vagas-abertas .swiper-button-next {
+  top: 127px;
+  right: 125px;
+}
+
+/* Cotação */
+#page-cotacao .form-cotacao {
+  padding: 20px;
+}
+#page-cotacao .form-cotacao .form {
+  padding: 0;
+}
+#page-cotacao .form-cotacao .form-group {
+  margin-bottom: 15px;
+}
+#page-cotacao .form-cotacao .form-group .wpcf7-list-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
 }
