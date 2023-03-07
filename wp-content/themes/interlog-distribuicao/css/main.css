@@ -344,7 +344,6 @@ section#hero-page {
     z-index: 0;
 }
 #hero-page .swiper-slide h2 {
-    margin-bottom: 20px;
     padding: 0;
     font-size: 44px;
     font-weight: 700;
@@ -1460,6 +1459,37 @@ section#entre-em-contato {
 }
 #entre-em-contato .content p {
     padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+
+/*
+    * Outras Paginas
+*/
+
+/* Conteudo */
+#op-content {
+    background-color: var(--color-default);
+    text-align: left;
+    position: relative;
+    margin-bottom: 70px;
+}
+#op-content .content h1,
+#op-content .content h2,
+#op-content .content h3,
+#op-content .content h4,
+#op-content .content h5,
+#op-content .content h6 {
+    color: var(--color-primary);
+}
+#op-content .content p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+#op-content .content li {
     font-size: 16px;
     font-weight: 400;
     color: var(--color-secondary);
