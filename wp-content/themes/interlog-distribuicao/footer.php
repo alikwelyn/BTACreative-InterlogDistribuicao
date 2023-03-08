@@ -53,6 +53,24 @@
         </div>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <?php wp_footer(); ?>
+<script>
+// Preloader
+<?php $preloader = get_field('show_preloader', 'option'); if($preloader == true){ ?>
+$(document).ready(function() {
+  $(window).on('load', function(){
+    $('html').css('overflow-y', 'hidden');
+    $('.preloader').delay(500).fadeOut('slow', function(){
+      $('html').css('overflow-y', 'auto');
+    });       
+  });
+});
+<?php } else { ?>
+$(document).ready(function() {
+  $('html').css('overflow-y', 'auto');
+});
+<?php } ?>
+</script>
 </body>
 </html>

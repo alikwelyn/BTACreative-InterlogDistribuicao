@@ -9,8 +9,21 @@
 
 <body>
   <?php
-  $social_media_choose = get_field('social_media_choose', 'option');
+    $social_media_choose = get_field('social_media_choose', 'option');
+    $preloader = get_field('show_preloader', 'option');
   ?>
+  <?php if($preloader == true): ?>
+  <div class="preloader">
+    <img class="preloader-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-interlog-blue.png" width="200" alt="<?php echo wp_get_document_title(); ?>">
+    <div class="preloader-preview-area">
+      <div class="ball-pulse">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <?php endif ?>
   <div id="topbar" class="fixed-top d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-end">
       <div class="contact-info d-flex align-items-center">
