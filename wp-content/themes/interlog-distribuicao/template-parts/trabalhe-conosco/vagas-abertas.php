@@ -19,7 +19,7 @@
                             foreach ( $posts as $post ) :
                             setup_postdata( $post );
                         ?>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-aos="fade-right">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="periodo"><span><?php echo get_field( 'periodo'); ?></span></div>
