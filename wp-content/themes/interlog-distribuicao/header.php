@@ -68,7 +68,7 @@
       </div>
     </div>
   </div>
-  <?php if ( is_front_page() && is_home() ) { ?>
+  <?php if ( is_front_page() && is_home() || is_page(248) ) { ?>
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
       <a href="<?php echo get_home_url(); ?>" class="logo d-flex align-items-center">
