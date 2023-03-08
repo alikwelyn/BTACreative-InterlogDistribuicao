@@ -40,7 +40,12 @@
                 <p>© 2023 Todos direitos reservados</p>
             </div>
             <div class="col-md-6 politica">
-                <a href="#">Política de privacidade</a>
+                <?php
+                wp_nav_menu( array(
+                    'theme_location' => 'footer-menu',
+                    'container' => false,
+                ) );
+                ?>
             </div>
         </div>
     </div>

@@ -1479,15 +1479,18 @@ footer .footer-enderecos p {
 }
 footer #footer-bottom{
     margin-top: 40px;
+    padding-top: 20px;
     border-top: 1px solid #C9C9C9;
 }
 footer #footer-bottom .politica{
     display: flex;
     justify-content: end;
 }
+footer #footer-bottom ul {
+    margin-bottom: 0;
+}
 footer #footer-bottom p,
 footer #footer-bottom a{
-    margin-top: 20px;
     font-size: 12px;
     font-weight: 400;
     color: #979797;
