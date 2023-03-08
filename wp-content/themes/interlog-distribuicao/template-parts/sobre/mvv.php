@@ -1,7 +1,7 @@
 <section id="mvv">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 mx-auto">
+            <div class="col-md-10 col-xl-8 mx-auto">
                 <?php 
                     $mvv_sobre = get_field('mvv_sobre', 'option');
                 ?>

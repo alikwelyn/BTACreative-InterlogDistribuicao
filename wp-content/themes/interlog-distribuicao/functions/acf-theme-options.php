@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
 }
 
 /*
-* Theme Options
+  * Theme Options
 */
 
 if( function_exists('acf_add_options_page') ) {

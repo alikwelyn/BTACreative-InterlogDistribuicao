@@ -68,6 +68,7 @@ section {
     font-size: 14px;
     transition: all 0.5s;
     padding: 0;
+    z-index: 100;
 }
 #topbar.topbar-scrolled {
     top: -52px;
@@ -263,6 +264,58 @@ section {
     left: 100%;
     visibility: visible;
 }
+.navbar.navbar-mobile>ul>li>a:before,
+.navbar.navbar-mobile .current-menu-item a:before,
+.navbar.navbar-mobile .current-menu-item a:before {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    background-color: transparent;
+}
+.navbar.navbar-mobile>ul>li>a:focus,
+.navbar.navbar-mobile>ul>li>a:hover,
+.navbar.navbar-mobile>ul>li>a:hover:focus {
+    color: var(--color-primary);
+}
+.navbar.navbar-mobile .button, .navbar.navbar-mobile .button:focus {
+    margin: 10px 20px;
+}
+.mobile-nav-show {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+    margin-right: 10px;
+}
+.mobile-nav-hide {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+}
+.mobile-nav-active {
+    overflow: hidden;
+}
+i.mobile-nav-toggle.mobile-nav-show.fa.fa-bars,
+i.mobile-nav-toggle.mobile-nav-hide.fa.fa-times {
+    color: var(--color-primary);
+}
+.mobile-nav-active .navbar {
+    right: 0;
+}
+.mobile-nav-active .navbar:before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 113, 43, 0.6);
+    z-index: 9996;
+}
 
 /* Section */
 .section-title {
@@ -344,7 +397,6 @@ section#hero-page {
     z-index: 0;
 }
 #hero-page .swiper-slide h2 {
-    margin-bottom: 20px;
     padding: 0;
     font-size: 44px;
     font-weight: 700;
@@ -965,6 +1017,7 @@ section#distribuicao {
 }
 #distribuicao #sobre-distribuicao .card {
     border-radius: 26px;
+    min-height: 360px;
 }
 #distribuicao #sobre-distribuicao .card .card-img, #distribuicao .card .card-img-top {
     border-radius: 26px;
@@ -990,140 +1043,34 @@ section#distribuicao {
     font-weight: 7400;
 }
 
-/* Section Armazenagem */
-section#armazenagem {
-    padding: 0;
-}
-#armazenagem {
-    background: var(--color-default);
-}
-#armazenagem .border{
-    width: 70%;
-    margin: 50px auto ;
-}
-#armazenagem img{
-    max-width: 600px;
-    max-height: 450px;
-    border-radius: 26px;
-}
-#armazenagem .icon-box {
-    display: flex;
-    flex-flow: wrap;
-    flex: 100%;
-    align-items: center;
-    margin-bottom: 43px;
-    border: none;
-}
-#armazenagem .icon-box .icon-box-img{
-    padding: 0 20px 0 0;
-}
-#armazenagem .icon-box .icon-box-img img{
-    max-width: 121px;
-    max-height: 110px;
-    object-fit: cover;
-    object-position: center;
-}
-#armazenagem .icon-box .icon-box-body {
-    flex: 2;
-    padding: 0 20px;
-}
-#armazenagem .icon-box .icon-box-body h4 {
-    padding: 0;
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--color-primary);
-}
-#armazenagem .icon-box .icon-box-body p {
-    padding: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--color-secondary);
-}
-#armazenagem .icon-box .icon-box-footer {
-    padding: 25px 0;
-}
-#armazenagem .icon-box .icon-box-footer p {
-    padding: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--color-secondary);
-}
-
-/* Section Gestão Eletrônica de Documentos */
+/* Section Armazenagem / Gestão Eletrônica de Documentos / Courier Internacional */
+section#armazenagem,
 section#gestao-eletronica-documentos {
     padding: 0;
 }
-#gestao-eletronica-documentos {
-    background: var(--color-default);
-}
-#gestao-eletronica-documentos .border{
-    width: 70%;
-    margin: 50px auto;
-}
-#gestao-eletronica-documentos img{
-    max-width: 600px;
-    max-height: 450px;
-    border-radius: 26px;
-}
-#gestao-eletronica-documentos .icon-box {
-    display: flex;
-    flex-flow: wrap;
-    flex: 100%;
-    align-items: center;
-    margin-bottom: 43px;
-    border: none;
-}
-#gestao-eletronica-documentos .icon-box .icon-box-img{
-    padding: 0 20px 0 0;
-}
-#gestao-eletronica-documentos .icon-box .icon-box-img img{
-    max-width: 121px;
-    max-height: 110px;
-    object-fit: cover;
-    object-position: center;
-}
-#gestao-eletronica-documentos .icon-box .icon-box-body {
-    flex: 2;
-    padding: 0 20px;
-}
-#gestao-eletronica-documentos .icon-box .icon-box-body h4 {
-    padding: 0;
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--color-primary);
-}
-#gestao-eletronica-documentos .icon-box .icon-box-body p {
-    padding: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--color-secondary);
-}
-#gestao-eletronica-documentos .icon-box .icon-box-footer {
-    padding: 25px 0;
-}
-#gestao-eletronica-documentos .icon-box .icon-box-footer p {
-    padding: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--color-secondary);
-}
-
-/* Section Courier Internacional */
 section#courier-internacional {
     padding: 0 0 60px;
 }
+#armazenagem,
+#gestao-eletronica-documentos,
 #courier-internacional {
     background: var(--color-default);
 }
-#courier-internacional .border{
+#armazenagem .border,
+#gestao-eletronica-documentos .border,
+#courier-internacional .border {
     width: 70%;
-    margin: 50px auto;
+    margin: 50px auto ;
 }
-#courier-internacional img{
+#armazenagem img,
+#gestao-eletronica-documentos img,
+#courier-internacional img {
     max-width: 600px;
     max-height: 450px;
     border-radius: 26px;
 }
+#armazenagem .icon-box,
+#gestao-eletronica-documentos .icon-box,
 #courier-internacional .icon-box {
     display: flex;
     flex-flow: wrap;
@@ -1132,34 +1079,48 @@ section#courier-internacional {
     margin-bottom: 43px;
     border: none;
 }
-#courier-internacional .icon-box .icon-box-img{
+#armazenagem .icon-box .icon-box-img,
+#gestao-eletronica-documentos .icon-box .icon-box-img,
+#courier-internacional .icon-box .icon-box-img {
     padding: 0 20px 0 0;
 }
-#courier-internacional .icon-box .icon-box-img img{
+#armazenagem .icon-box .icon-box-img img,
+#gestao-eletronica-documentos .icon-box .icon-box-img img,
+#courier-internacional .icon-box .icon-box-img img {
     max-width: 121px;
     max-height: 110px;
     object-fit: cover;
     object-position: center;
 }
+#armazenagem .icon-box .icon-box-body,
+#gestao-eletronica-documentos .icon-box .icon-box-body,
 #courier-internacional .icon-box .icon-box-body {
     flex: 2;
     padding: 0 20px;
 }
+#armazenagem .icon-box .icon-box-body h4,
+#gestao-eletronica-documentos .icon-box .icon-box-body h4,
 #courier-internacional .icon-box .icon-box-body h4 {
     padding: 0;
     font-size: 28px;
     font-weight: 700;
     color: var(--color-primary);
 }
+#armazenagem .icon-box .icon-box-body p,
+#gestao-eletronica-documentos .icon-box .icon-box-body p,
 #courier-internacional .icon-box .icon-box-body p {
     padding: 0;
     font-size: 16px;
     font-weight: 400;
     color: var(--color-secondary);
 }
+#armazenagem .icon-box .icon-box-footer,
+#gestao-eletronica-documentos .icon-box .icon-box-footer,
 #courier-internacional .icon-box .icon-box-footer {
     padding: 25px 0;
 }
+#armazenagem .icon-box .icon-box-footer p,
+#gestao-eletronica-documentos .icon-box .icon-box-footer p,
 #courier-internacional .icon-box .icon-box-footer p {
     padding: 0;
     font-size: 16px;
@@ -1347,6 +1308,7 @@ section#courier-internacional {
     top: 15px;
     left: 45%;
 }
+
 /*
     * Trabalhe Conosco
 */
@@ -1465,6 +1427,37 @@ section#entre-em-contato {
     color: var(--color-secondary);
 }
 
+/*
+    * Outras Paginas
+*/
+
+/* Conteudo */
+#op-content {
+    background-color: var(--color-default);
+    text-align: left;
+    position: relative;
+    margin-bottom: 70px;
+}
+#op-content .content h1,
+#op-content .content h2,
+#op-content .content h3,
+#op-content .content h4,
+#op-content .content h5,
+#op-content .content h6 {
+    color: var(--color-primary);
+}
+#op-content .content p {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+#op-content .content li {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+
 /* Footer */
 footer {
     background: var(--color-default);
@@ -1487,6 +1480,10 @@ footer .footer-enderecos p {
 footer #footer-bottom{
     margin-top: 40px;
     border-top: 1px solid #C9C9C9;
+}
+footer #footer-bottom .politica{
+    display: flex;
+    justify-content: end;
 }
 footer #footer-bottom p,
 footer #footer-bottom a{
