@@ -8,6 +8,9 @@
 </head>
 
 <body>
+  <?php
+  $social_media_choose = get_field('social_media_choose', 'option');
+  ?>
   <div id="topbar" class="fixed-top d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-end">
       <div class="contact-info d-flex align-items-center">
@@ -19,12 +22,23 @@
         ?>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter">
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-        </a>
-        <a href="#" class="facebook">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
+        <?php
+          $social_media_icons = array(
+            'Instagram' => 'fa fa-instagram',
+            'Twitter' => 'fa fa-twitter',
+            'Youtube' => 'fa fa-youtube-play',
+            'Linkedin' => 'fa fa-linkedin',
+            'Facebook' => 'fa fa-facebook',
+          );
+          foreach ($social_media_icons as $social_media_name => $social_media_icon_class) {
+            if ($social_media_choose && in_array($social_media_name, $social_media_choose)) {
+              $social_media_link = get_field('link_' . strtolower($social_media_name), 'option');
+        ?>
+            <a href="<?php echo esc_url($social_media_link); ?>" target="_blank"><i class="<?php echo esc_attr($social_media_icon_class); ?>"></i></a>
+        <?php
+            }
+          }
+        ?>
       </div>
     </div>
   </div>
