@@ -6,7 +6,7 @@
                     $mvv_sobre = get_field('mvv_sobre', 'option');
                 ?>
                 <div class="grid-cards">
-                    <div class="card-1">
+                    <div class="card-1" data-aos="fade-right">
                         <div class="icon-box">
                             <div class="icon-box-img">
                                 <img src="<?php echo $mvv_sobre['img_c1_mvv_sobre']; ?>" class="img-fluid" alt="">
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="card-2">
-                        <div class="icon-box">
+                        <div class="icon-box" data-aos="fade-right">
                             <div class="icon-box-img">
                                 <img src="<?php echo $mvv_sobre['img_c2_mvv_sobre']; ?>" class="img-fluid" alt="">
                             </div>
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     <div class="side">
-                        <div class="icon-box">
+                        <div class="icon-box" data-aos="fade-left">
                             <div class="icon-box-img">
                                 <img src="<?php echo $mvv_sobre['img_side_mvv_sobre']; ?>" class="img-fluid" alt="">
                             </div>

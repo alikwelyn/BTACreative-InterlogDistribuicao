@@ -1,6 +1,6 @@
 <section id="relacao">
     <div class="container">
-        <div class="row">
+        <div class="row" data-aos="fade-up">
             <?php 
                 $relations_sobre = get_field('relations_sobre', 'option');
             ?>
