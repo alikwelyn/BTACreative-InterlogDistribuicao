@@ -7,7 +7,7 @@
             $icon_url = get_field( 'icon_services_homepage', $distribuicao );
             $text = get_field( 'text_services_homepage', $distribuicao );
         ?>
-        <div class="col-md-8 d-flex align-items-stretch mx-auto">
+        <div class="col-md-8 d-flex align-items-stretch mx-auto" data-aos="fade-up">
           <div class="icon-box">
             <div class="icon-box-img">
               <img src="<?php echo esc_url( $icon_url ); ?>" class="img-fluid" alt="">
@@ -34,7 +34,7 @@
             setup_postdata( $post );
             $thumbnail_url = get_the_post_thumbnail_url( $post, 'full' );
         ?>
-        <div class="col-md-3">
+        <div class="col-md-3" data-aos="fade-right">
             <div class="card shadow">
             <img class="card-img-top" src="<?php echo esc_url( $thumbnail_url ); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>">
             <div class="card-body">
