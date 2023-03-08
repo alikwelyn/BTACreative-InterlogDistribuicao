@@ -87,6 +87,10 @@ $(function() {
             prevEl: '#vagas-abertas-prev'
         },
         breakpoints: {
+            820: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+            },
             640: {
                 slidesPerView: 1,
                 spaceBetween: 0,
