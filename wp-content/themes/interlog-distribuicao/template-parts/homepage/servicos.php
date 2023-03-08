@@ -5,6 +5,7 @@
       </div>
       <div class="row">
         <?php 
+            $services_homepage = get_field('services_homepage', 'option');
             $posts = get_posts(
                 array(
                     'posts_per_page'	=> -1,
@@ -30,7 +31,7 @@
         <?php wp_reset_postdata(); ?>
         <?php endif; ?>
         <div class="col-md-12 text-center mt-2 mb-5">
-            <a href="#" class="btn-default">CONHEÇA NOSSOS SERVIÇOS</a>
+            <a href="<?php echo $services_homepage['link_services_homepage']; ?>" class="btn-default">CONHEÇA NOSSOS SERVIÇOS</a>
         </div>
       </div>
     </div>
