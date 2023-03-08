@@ -7,7 +7,7 @@
             $thumbnail_url = get_the_post_thumbnail_url( $solucoes_inteligente->ID, 'full' );
       ?>
       <div class="col-md-6 d-flex align-items-center">
-        <div class="icon-box">
+        <div class="icon-box" data-aos="fade-right">
           <div class="icon-box-body">
             <h4><?php echo esc_html( $solucoes_inteligente->post_title ); ?></h4>
           </div>
@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <img class="img-fluid" src="<?php echo esc_url( $thumbnail_url ); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>">
+        <img class="img-fluid" src="<?php echo esc_url( $thumbnail_url ); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>" data-aos="fade-left">
       </div>
       <?php endif; ?>
     </div>
