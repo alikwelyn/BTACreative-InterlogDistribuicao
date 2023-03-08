@@ -30,6 +30,7 @@ add_action( 'after_setup_theme', 'add_title_thumbnails' );
 function register_menu() {
     register_nav_menu('top-menu', 'Menu - Top');
     register_nav_menu('main-menu', 'Menu - Header');
+    register_nav_menu('footer-menu', 'Menu - Footer');
 }
 add_action( 'init', 'register_menu' );
 

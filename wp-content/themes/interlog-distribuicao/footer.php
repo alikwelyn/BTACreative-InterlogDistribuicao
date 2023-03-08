@@ -7,38 +7,30 @@
                 </a>
             </div>
             <div class="col-md-4">
+                <?php 
+                    $stores = get_field('stores_footer', 'option');
+                    $left_stores = $stores['lista_esquerda_stores_footer'];
+                    foreach($left_stores as $key => $value):
+                ?>
                 <div class="footer-enderecos">
-                    <h5>Matriz - Belo Horizonte</h5>
-                    <p>Rua Major Laje, 370 – Ouro Preto, BH<br>
-                    Telefone: (31) 3048-9088</p>
+                    <h5><?php echo $value['name_lista_esquerda_stores_footer'] ?></h5>
+                    <p><?php if($value['address_lista_esquerda_stores_footer']) : ?><?php echo $value['address_lista_esquerda_stores_footer'] ?><br> <?php endif; ?>
+                    Telefone: <?php echo $value['telephone_lista_esquerda_stores_footer'] ?></p>
                 </div>
-                <div class="footer-enderecos">
-                    <h5>Matriz - Belo Horizonte</h5>
-                    <p>Rua Major Laje, 370 – Ouro Preto, BH<br>
-                    Telefone: (31) 3048-9088</p>
-                </div>
-                <div class="footer-enderecos">
-                    <h5>Matriz - Belo Horizonte</h5>
-                    <p>Rua Major Laje, 370 – Ouro Preto, BH<br>
-                    Telefone: (31) 3048-9088</p>
-                </div>
+                <?php endforeach; ?>
             </div>
             <div class="col-md-4">
+                <?php 
+                    $stores = get_field('stores_footer', 'option');
+                    $right_stores = $stores['lista_direita_stores_footer'];
+                    foreach($right_stores as $key => $value):
+                ?>
                 <div class="footer-enderecos">
-                    <h5>Matriz - Belo Horizonte</h5>
-                    <p>Rua Major Laje, 370 – Ouro Preto, BH<br>
-                    Telefone: (31) 3048-9088</p>
+                    <h5><?php echo $value['name_lista_direita_stores_footer'] ?></h5>
+                    <p><?php if($value['address_lista_direita_stores_footer']) : ?><?php echo $value['address_lista_direita_stores_footer'] ?><br> <?php endif; ?>
+                    Telefone: <?php echo $value['telephone_lista_direita_stores_footer'] ?></p>
                 </div>
-                <div class="footer-enderecos">
-                    <h5>Matriz - Belo Horizonte</h5>
-                    <p>Rua Major Laje, 370 – Ouro Preto, BH<br>
-                    Telefone: (31) 3048-9088</p>
-                </div>
-                <div class="footer-enderecos">
-                    <h5>Matriz - Belo Horizonte</h5>
-                    <p>Rua Major Laje, 370 – Ouro Preto, BH<br>
-                    Telefone: (31) 3048-9088</p>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
@@ -48,57 +40,34 @@
                 <p>© 2023 Todos direitos reservados</p>
             </div>
             <div class="col-md-6 politica">
-                <a href="#">Política de privacidade</a>
+                <?php
+                wp_nav_menu( array(
+                    'theme_location' => 'footer-menu',
+                    'container' => false,
+                ) );
+                ?>
             </div>
         </div>
     </div>
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <?php wp_footer(); ?>
-<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
 <script>
-// Swipe Slider
-$(function() {
-    // Carousel Banner Home
-    var SwiperBannerHome = new Swiper('.banners-home', {
-        loop: true,
-        lazy: true,
-        navigation: {
-            nextEl: '#banner-home-next',
-            prevEl: '#banner-home-prev'
-        }
-    });
-    var SwiperBannerPaginas = new Swiper('.banners-paginas', {
-        loop: false,
-        lazy: true,
-        paginationClickable: false,
-        touchMoveStopPropagation:false,
-        simulateTouch : false, 
-        allowSwipeToNext: false, 
-        allowSwipeToPrev: false
-    });
-    var SwiperVagasAbertas = new Swiper('.vagas-abertas', {
-        loop: false,
-        lazy: true,
-        slidesPerView: 3,
-        spaceBetween: 20,
-        navigation: {
-            nextEl: '#vagas-abertas-next',
-            prevEl: '#vagas-abertas-prev'
-        },
-        breakpoints: {
-            820: {
-                slidesPerView: 2,
-                spaceBetween: 0,
-            },
-            640: {
-                slidesPerView: 1,
-                spaceBetween: 0,
-            },
-        },
-    });
+// Preloader
+<?php $preloader = get_field('show_preloader', 'option'); if($preloader == true){ ?>
+$(document).ready(function() {
+  $(window).on('load', function(){
+    $('html').css('overflow-y', 'hidden');
+    $('.preloader').delay(500).fadeOut('slow', function(){
+      $('html').css('overflow-y', 'auto');
+    });       
+  });
 });
-
+<?php } else { ?>
+$(document).ready(function() {
+  $('html').css('overflow-y', 'auto');
+});
+<?php } ?>
 </script>
 </body>
 </html>

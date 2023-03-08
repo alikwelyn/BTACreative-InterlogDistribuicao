@@ -12,7 +12,7 @@
                 if( $posts ): 
             ?>
             <?php foreach( $posts as $post ): setup_postdata( $post ); ?>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-right">
                 <div class="icon-box">
                     <div class="icon-box-header">
                         <h3><?php echo get_field("number_data_structure"); ?></h3>

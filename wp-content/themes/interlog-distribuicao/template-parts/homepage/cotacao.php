@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="form-cotacao">
+                <div class="form-cotacao" data-aos="zoom-in">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
                             <a class="nav-link active" data-bs-toggle="pill" href="#cotacaoForm">Cotação</a>
@@ -22,7 +22,8 @@
                     </div>
                     <div class="text-center">
                     <p>Quer solicitar mais itens nas sua cotação?</p>
-                    <a href="#" class="acesse">Acesse a página completa</a>
+                    <?php $quo_track_homepage = get_field('quo_track_homepage', 'option'); ?>
+                    <a href="<?php echo $quo_track_homepage['link_quo_track_homepage']; ?>" class="acesse">Acesse a página completa</a>
                     </div>
                 </div>
             </div>

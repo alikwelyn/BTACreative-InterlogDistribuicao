@@ -10,7 +10,7 @@
             $thumbnail_url = get_the_post_thumbnail_url( $gestao_eletronica_documentos->ID, 'full' );
       ?>
       <div class="col-md-6">
-        <div class="icon-box">
+        <div class="icon-box" data-aos="fade-right">
           <div class="icon-box-img">
             <img src="<?php echo esc_url( $icon_url ); ?>" class="img-fluid" alt="">
           </div>
@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <img class="img-fluid" src="<?php echo esc_url( $thumbnail_url ); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>">
+        <img class="img-fluid" src="<?php echo esc_url( $thumbnail_url ); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>" data-aos="fade-left">
       </div>
       <?php endif; ?>
     </div>

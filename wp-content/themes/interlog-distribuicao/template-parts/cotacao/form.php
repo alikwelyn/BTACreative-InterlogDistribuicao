@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-cotacao">
-                    <div class="form">
+                    <div class="form" data-aos="fade-up">
                         <?php echo do_shortcode('[contact-form-7 id="155" title="Página Cotação"]'); ?>
                     </div>
                 </div>

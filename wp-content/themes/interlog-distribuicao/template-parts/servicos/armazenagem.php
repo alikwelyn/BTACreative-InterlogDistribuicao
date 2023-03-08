@@ -10,10 +10,10 @@
             $thumbnail_url = get_the_post_thumbnail_url( $armazenagem->ID, 'full' );
       ?>
       <div class="col-md-6 order-2 order-md-1">
-        <img class="img-fluid" src="<?php echo esc_url( $thumbnail_url ); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>">
+        <img class="img-fluid" src="<?php echo esc_url( $thumbnail_url ); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>" data-aos="fade-right">
       </div>
       <div class="col-md-6 order-1 order-md-2">
-        <div class="icon-box">
+        <div class="icon-box" data-aos="fade-left">
           <div class="icon-box-img">
             <img src="<?php echo esc_url( $icon_url ); ?>" class="img-fluid" alt="">
           </div>

@@ -31,11 +31,11 @@ function custom_enqueue_scripts()
   wp_register_style('responsive', get_template_directory_uri() . '/css/responsive.css', false, '1.0.0', null);
   wp_enqueue_style('responsive');
 
-  // * scripts *
+  // preloader
+  wp_register_style('preloader', get_template_directory_uri() . '/css/preloader.css', false, '1.0.0', null);
+  wp_enqueue_style('preloader');
 
-  // JQuery
-  wp_register_script('jquery', 'https://code.jquery.com/jquery-3.6.0.js', false, '3.6.0', false);
-  wp_enqueue_script('jquery');
+  // * scripts *
 
   // Bundle Bootstrap 5
   wp_register_script('bootstrap5', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js', false, '5.2.3', true);

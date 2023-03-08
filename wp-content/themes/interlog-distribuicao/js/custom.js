@@ -157,6 +157,49 @@
     }
   });
 
+  //
+  // Swipe Slider
+  jQuery(function() {
+    // Carousel Banner Home
+    var SwiperBannerHome = new Swiper('.banners-home', {
+        loop: true,
+        lazy: true,
+        navigation: {
+            nextEl: '#banner-home-next',
+            prevEl: '#banner-home-prev'
+        }
+    });
+    var SwiperBannerPaginas = new Swiper('.banners-paginas', {
+        loop: false,
+        lazy: true,
+        paginationClickable: false,
+        touchMoveStopPropagation:false,
+        simulateTouch : false, 
+        allowSwipeToNext: false, 
+        allowSwipeToPrev: false
+    });
+    var SwiperVagasAbertas = new Swiper('.vagas-abertas', {
+        loop: false,
+        lazy: true,
+        slidesPerView: 3,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '#vagas-abertas-next',
+            prevEl: '#vagas-abertas-prev'
+        },
+        breakpoints: {
+            820: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+            },
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+        },
+    });
+  });
+
   /*
     * Animation on scroll
   */
