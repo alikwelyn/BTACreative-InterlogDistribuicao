@@ -11,6 +11,9 @@
   <?php
     $social_media_choose = get_field('social_media_choose', 'option');
     $preloader = get_field('show_preloader', 'option');
+    $show_wp = get_field('show_wp_button', 'option');
+    $whatsapp_number = get_field('whatsapp', 'option');
+    $whatsapp_msg = get_field('whatsapp_msg', 'option');
   ?>
   <?php if($preloader == true): ?>
   <div class="preloader">
@@ -22,6 +25,16 @@
         <div></div>
       </div>
     </div>
+  </div>
+  <?php endif ?>
+  <?php if($show_wp == true): ?>
+  <div>
+    <a href="https://api.whatsapp.com/send/?phone=+55<?php echo $whatsapp_number; ?>&text=<?php echo $whatsapp_msg; ?>&app_absent=0" id="wa_button" target="_new">
+      <div class="circle-fill" style="transform-origin: center;"></div>
+        <div class="img-circle" style="transform-origin: center;">
+          <div class="img-circleblock" style="transform-origin: center;"></div>
+        </div>
+    </a>
   </div>
   <?php endif ?>
   <div id="topbar" class="fixed-top d-flex align-items-center">
