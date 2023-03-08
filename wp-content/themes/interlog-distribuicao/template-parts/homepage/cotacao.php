@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="form-cotacao">
+                <div class="form-cotacao" data-aos="zoom-in">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
                             <a class="nav-link active" data-bs-toggle="pill" href="#cotacaoForm">Cotação</a>

@@ -1,6 +1,6 @@
 <section id="melhores-servicos" class="position-relative">
     <div class="container">
-      <div class="row">
+      <div class="row" data-aos="fade-up">
         <?php $best_services_transport_homepage = get_field('best_services_transport_homepage', 'option'); ?>
         <div class="section-title">
             <?php echo $best_services_transport_homepage['text_best_services_transport_homepage']; ?>

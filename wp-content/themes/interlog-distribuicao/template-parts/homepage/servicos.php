@@ -17,7 +17,7 @@
         ?>
 	    <?php foreach( $posts as $post ): setup_postdata( $post ); ?>
         <div class="col-md-6 d-flex align-items-stretch">
-            <div class="icon-box">
+            <div class="icon-box" data-aos="fade-right">
                 <div class="icon-box-img">
                     <img src="<?php echo get_field("icon_services_homepage"); ?>" class="img-fluid" alt="">
                 </div>
